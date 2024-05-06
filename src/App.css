@@ -7,4 +7,130 @@
 
 body {
   font-family: "Lato", sans-serif;
+  font-size: 14px;
+}
+
+.bg-blue {
+  background: #233a95;
+}
+
+.header-wrapper .top-strip {
+  padding: 8px 0;
+}
+.header-wrapper .top-strip p {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.header-wrapper .header {
+  width: 100%;
+  height: auto;
+  padding: 15px 0;
+}
+.logo-wrapper img {
+  width: 100%;
+}
+
+.header-wrapper .header .part2 .country-dropdown {
+  width: 170px;
+  height: 60px;
+  min-width: 170px;
+  color: #000 !important;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  border-radius: 7px !important;
+  padding: 10px 15px !important;
+  text-align: left;
+  justify-content: flex-start !important;
+}
+.header-wrapper .header .part2 .country-dropdown .label {
+  font-size: 12px !important;
+  text-transform: capitalize !important;
+  color: rgba(0, 0, 0, 0.4) !important;
+  line-height: 16px;
+}
+.header-wrapper .header .part2 .country-dropdown .name {
+  font-size: 14px !important;
+  text-transform: capitalize !important;
+  color: #233a95 !important;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.header-wrapper .header .part2 .country-dropdown span.ml-auto svg {
+  opacity: 0.7;
+}
+
+header .header-search {
+  width: 60%;
+  height: 60px;
+  background: #f3f4f7;
+  padding: 10px;
+  border-radius: 7px;
+  position: relative;
+}
+header .header-search input {
+  background: transparent !important;
+  outline: none !important;
+  font-size: 15px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 40px;
+  border: 0px !important;
+  padding: 0 20px !important;
+}
+header .header-search input::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+header .header-search button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  z-index: 100;
+  min-width: 40px !important;
+  height: 40px !important;
+  width: 40px !important;
+  border-radius: 50% !important;
+}
+header .header-search button svg {
+  font-size: 25px;
+  color: #6f6f6f;
+}
+
+header .part3 .circle {
+  align-items: center;
+  justify-content: center;
+  min-width: 45px !important;
+  height: 45px !important;
+  width: 45px !important;
+  border-radius: 50% !important;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  color: #000;
+}
+header .part3 .circle svg {
+  font-size: 25px;
+}
+
+.cart-tab .price {
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 600;
+}
+.cart-tab button {
+  background: #fff1ee !important;
+}
+.cart-tab button svg {
+  color: #ea2b0f !important;
+}
+.cart-tab .count {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  background: #ea2b0f;
+  border-radius: 50%;
+  color: #fff;
+  width: 20px;
+  height: 20px;
 }
