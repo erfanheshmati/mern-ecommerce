@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap");
 
 * {
   margin: 0;
@@ -14,6 +15,32 @@ body {
   background: #233a95;
 }
 
+@media (min-width: 1300px) {
+  .container,
+  .container-xl,
+  .container-lg,
+  .container-md,
+  .container-sm {
+    max-width: 1200px;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px !important;
+  height: 8px !important;
+}
+::-webkit-scrollbar-thumb {
+  background: #ccc !important;
+}
+::-webkit-scrollbar-track {
+  background: transparent !important;
+}
+
+/* Header */
+.header-wrapper {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 10px;
+}
 .header-wrapper .top-strip {
   padding: 8px 0;
 }
@@ -26,7 +53,7 @@ body {
 .header-wrapper .header {
   width: 100%;
   height: auto;
-  padding: 15px 0;
+  padding: 25px 0;
 }
 .logo-wrapper img {
   width: 100%;
@@ -47,7 +74,7 @@ body {
   font-size: 12px !important;
   text-transform: capitalize !important;
   color: rgba(0, 0, 0, 0.4) !important;
-  line-height: 16px;
+  line-height: 20px;
 }
 .header-wrapper .header .part2 .country-dropdown .name {
   font-size: 14px !important;
@@ -61,7 +88,7 @@ body {
   opacity: 0.7;
 }
 
-header .header-search {
+.header-search {
   width: 60%;
   height: 60px;
   background: #f3f4f7;
@@ -69,7 +96,7 @@ header .header-search {
   border-radius: 7px;
   position: relative;
 }
-header .header-search input {
+.header-search input {
   background: transparent !important;
   outline: none !important;
   font-size: 15px;
@@ -80,11 +107,11 @@ header .header-search input {
   border: 0px !important;
   padding: 0 20px !important;
 }
-header .header-search input::-webkit-input-placeholder {
+.header-search input::-webkit-input-placeholder {
   color: rgba(0, 0, 0, 0.5);
 }
 
-header .header-search button {
+.header-search button {
   position: absolute;
   top: 10px;
   right: 15px;
@@ -94,12 +121,12 @@ header .header-search button {
   width: 40px !important;
   border-radius: 50% !important;
 }
-header .header-search button svg {
+.header-search button svg {
   font-size: 25px;
   color: #6f6f6f;
 }
 
-header .part3 .circle {
+.part3 .circle {
   align-items: center;
   justify-content: center;
   min-width: 45px !important;
@@ -109,7 +136,7 @@ header .part3 .circle {
   border: 1px solid rgba(0, 0, 0, 0.1) !important;
   color: #000;
 }
-header .part3 .circle svg {
+.part3 .circle svg {
   font-size: 25px;
 }
 
@@ -133,4 +160,105 @@ header .part3 .circle svg {
   color: #fff;
   width: 20px;
   height: 20px;
+}
+
+/* Country List Modal */
+.location-modal .MuiPaper-elevation {
+  padding: 25px;
+  position: relative;
+  border-radius: 10px;
+}
+.location-modal .country-list {
+  margin: 20px 0 0;
+  max-height: 400px;
+  overflow-y: scroll;
+}
+.location-modal .country-list li {
+  width: 100%;
+  list-style: none;
+}
+.location-modal .country-list li button {
+  width: 100%;
+  text-transform: capitalize;
+  color: #000;
+  justify-content: flex-start;
+  padding: 10px;
+}
+.location-modal .country-list li button:hover {
+  background: #f1f1f1 !important;
+}
+.location-modal .country-list li button.active {
+  background: #e2e2e2 !important;
+}
+.location-modal .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #000;
+  min-width: 40px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 20px;
+}
+
+/* Navigation */
+nav .nav-part1 {
+  max-width: 20%;
+  flex: 0 0 20%;
+}
+nav .nav-part2 {
+  max-width: 80%;
+  flex: 0 0 80%;
+}
+nav .all-cat-tab {
+  background: #2bbef9;
+  padding: 10px 15px !important;
+  border-radius: 30px !important;
+}
+nav .all-cat-tab * {
+  color: #fff;
+}
+nav .all-cat-tab:hover {
+  background: #2bbef9;
+}
+nav .all-cat-tab .text {
+  font-weight: 600;
+  padding-top: 4px;
+}
+
+nav .all-cat-tab .icon1 svg {
+  font-size: 20px !important;
+}
+nav .all-cat-tab .icon2 svg {
+  font-size: 15px !important;
+}
+
+nav .nav-part2 ul {
+  margin-bottom: 0;
+}
+nav .nav-part2 ul li a {
+  text-decoration: none;
+}
+nav .nav-part2 ul li a button {
+  font-weight: 500;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.7);
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 25px;
+}
+nav .nav-part2 ul li button:hover {
+  background: #f0faff;
+  color: #2bbef9;
+}
+nav .nav-part2 ul li a .arrow-icon {
+  font-size: 12px;
+}
+nav .nav-part2 ul li a svg {
+  margin-right: 5px;
+  font-size: 20px;
 }
