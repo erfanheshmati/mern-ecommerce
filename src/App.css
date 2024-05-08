@@ -39,7 +39,6 @@ body {
 /* Header */
 .header-wrapper {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  padding-bottom: 10px;
 }
 .header-wrapper .top-strip {
   padding: 8px 0;
@@ -233,6 +232,42 @@ nav .all-cat-tab .icon1 svg {
 nav .all-cat-tab .icon2 svg {
   font-size: 15px !important;
 }
+nav .nav-part1 .cat-wrapper {
+  position: relative;
+}
+nav .nav-part1 .cat-wrapper .sidebar-nav {
+  width: 100%;
+  height: auto;
+  background: #fff;
+  position: absolute;
+  top: 124%;
+  left: 0;
+  padding: 10px;
+  padding-top: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+nav .nav-part1 .cat-wrapper .sidebar-nav.open {
+  opacity: 1;
+  visibility: inherit;
+}
+nav .nav-part1 .cat-wrapper .sidebar-nav ul li {
+  width: 100%;
+  list-style: none;
+}
+nav .nav-part1 .cat-wrapper .sidebar-nav ul li button {
+  color: #000;
+  width: 100%;
+  justify-content: flex-start;
+  font-size: 13px;
+  font-weight: 400;
+}
+nav .nav-part1 .cat-wrapper .sidebar-nav ul li button:hover {
+  background: transparent;
+  color: #2bbef9;
+}
 
 nav .nav-part2 ul {
   margin-bottom: 0;
@@ -247,7 +282,7 @@ nav .nav-part2 ul li a button {
   text-transform: uppercase;
   display: flex;
   align-items: center;
-  padding: 10px;
+  padding: 12px 15px;
   transition: all 0.3s ease-in-out;
   border-radius: 25px;
 }
@@ -261,4 +296,35 @@ nav .nav-part2 ul li a .arrow-icon {
 nav .nav-part2 ul li a svg {
   margin-right: 5px;
   font-size: 20px;
+}
+nav .nav-part2 ul li {
+  position: relative;
+  padding-bottom: 10px;
+}
+nav .nav-part2 ul li .submenu {
+  background: #fff;
+  position: absolute;
+  top: 101%;
+  left: 0;
+  min-width: 300px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+nav .nav-part2 ul li:hover .submenu {
+  opacity: 1;
+  visibility: inherit;
+}
+nav .nav-part2 ul li .submenu a {
+  display: block;
+  width: 100%;
+}
+nav .nav-part2 ul li .submenu a button {
+  width: 100%;
+  justify-content: flex-start !important;
+  border-radius: 0 !important;
+  text-transform: capitalize !important;
+}
+nav .nav-part2 ul li .submenu a button:hover {
+  background: rgba(0, 0, 0, 0.1);
 }
